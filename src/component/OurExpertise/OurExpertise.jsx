@@ -6,9 +6,9 @@ const OurExpertise = () => {
    return (
       <section className="expertise">
          <motion.div
-            initial={ { opacity: 0, x: 100 } }
+            initial={ { opacity: 0, y: 100 } }
             transition={ { duration: 1 } }
-            whileInView={ { opacity: 1, x: 0 } }
+            whileInView={ { opacity: 1, y: 0 } }
             viewport={ { once: true } }
             className="expertise-container">
             <div className="expertise-header">
