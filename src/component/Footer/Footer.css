@@ -120,6 +120,6 @@
 
    .footer-links {
       justify-content: start;
-      gap: 30px;
+      gap: 4rem;
    }
 }
