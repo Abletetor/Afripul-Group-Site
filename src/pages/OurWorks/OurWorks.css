@@ -1,0 +1,167 @@
+.our-works {
+   background: radial-gradient(circle at bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 1) 40%), linear-gradient(135deg, #000000, #111111);
+   color: white;
+   padding: 5rem 10%;
+   text-align: center;
+   position: relative;
+}
+
+.our-works::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(rgba(255, 255, 255, 0.1) 3px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 3px, transparent 1px);
+   background-size: 100px 100px;
+   opacity: 0.2;
+   pointer-events: none;
+}
+
+.title-image img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   margin: 0 auto;
+}
+
+.content-wrapper {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   gap: 40px;
+   align-items: center;
+   margin-top: 3rem;
+   text-align: left;
+}
+
+/* Sidebar */
+.sidebar ul {
+   list-style: none;
+   padding: 0;
+}
+
+.sidebar ul li {
+   padding: 10px 0;
+   cursor: pointer;
+   transition: 0.3s ease;
+   color: gray;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+   color: white;
+}
+
+.sidebar ul li span {
+   padding: .1rem .7rem;
+   border-radius: 14px;
+   border: 1px solid gray;
+   margin-left: 10px;
+}
+
+/* Main Content */
+.main-content {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: center;
+   align-items: start;
+   padding: 0 2rem;
+}
+
+.main-content .content-btn {
+   background: #111;
+   color: #fff;
+   border: 1.5px solid #fff;
+   padding: 0.3rem 1rem;
+   border-radius: 20px;
+   font-size: 0.9rem;
+   cursor: pointer;
+   transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.main-content .content-btn:hover {
+   transform: scale(1.05);
+}
+
+.content-description {
+   width: 500px;
+}
+
+.check-item {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-top: 10px;
+}
+
+.check-item .arrow-icon {
+   transform: rotate(-45deg);
+}
+
+
+/* Image Section */
+.image-section img {
+   width: 90%;
+   height: auto;
+   border-radius: 10px;
+   object-fit: cover;
+}
+
+/* Quote Box */
+.quote-box {
+   background: #1048FF;
+   padding: 20px;
+   border-radius: 8px;
+   color: white;
+   margin-top: 3rem;
+   width: 500px;
+   position: absolute;
+   right: 55%;
+   bottom: 4%;
+}
+
+.quote-box p {
+   font-size: 1rem;
+}
+
+.quote-box .author {
+   display: block;
+   margin-top: 10px;
+   font-size: 0.9rem;
+   font-weight: bold;
+   text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+   .content-wrapper {
+      grid-template-columns: 1fr;
+   }
+
+   .image-section {
+      margin-top: 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   .our-works {
+      padding: 4rem 5%;
+   }
+
+   .content-wrapper {
+      text-align: center;
+   }
+
+   .content-description,
+   .quote-box {
+      width: 100%;
+   }
+
+   .quote-box {
+      position: unset;
+      right: 0%;
+      bottom: 0%;
+   }
+}

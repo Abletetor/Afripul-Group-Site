@@ -1,0 +1,65 @@
+.empowering {
+   background: #0a0a0a;
+   text-align: center;
+   padding: 5rem 1.5rem;
+   color: #fff;
+}
+
+.cta-button {
+   background: #B7C7FC;
+   color: #1048FF;
+   border: 1.5px solid #1048FF;
+   padding: 0.3rem 1rem;
+   border-radius: 20px;
+   font-size: 0.9rem;
+   cursor: pointer;
+   transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+   transform: scale(1.05);
+}
+
+.empowering-title {
+   font-size: 2.5rem;
+   font-weight: 700;
+   margin: 1rem 0;
+   background: linear-gradient(45deg, #FFFFFF, #999999);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.empowering-text {
+   font-size: 1.2rem;
+   color: #bbb;
+   max-width: 700px;
+   margin: 0 auto 2rem;
+}
+
+.browser-preview {
+   display: flex;
+   justify-content: center;
+   margin-top: 2rem;
+}
+
+.browser-preview img {
+   max-width: 90%;
+   border-radius: 15px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .empowering-title {
+      font-size: 2rem;
+   }
+
+   .empowering-text {
+      font-size: 1rem;
+   }
+
+   .browser-preview img {
+      max-width: 100%;
+   }
+}

@@ -1,0 +1,89 @@
+.partnership-section {
+   margin: 0 auto;
+   padding: 5rem 9%;
+   text-align: center;
+   color: white;
+   background: #0d0d0d;
+   margin-top: 3rem;
+}
+
+.partnership-title {
+   font-size: 2rem;
+   font-weight: bold;
+   margin-bottom: 0.5rem;
+}
+
+.partnership-subtitle {
+   font-size: 1rem;
+   color: #ccc;
+   margin-bottom: 2rem;
+   max-width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.partnership-container {
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+   align-items: start;
+   flex-wrap: wrap;
+}
+
+.partnership-card {
+   background: #1a1a1a;
+   padding: 2rem;
+   border-radius: 10px;
+   text-align: left;
+   width: 350px;
+   transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.partnership-card:hover {
+   transform: translateY(-5px);
+   background: #262626;
+}
+
+.partnership-icon {
+   font-size: 3rem;
+   color: #1048FF;
+   margin-bottom: 1rem;
+}
+
+.partnership-card h3 {
+   font-size: 1.3rem;
+   margin-bottom: 0.5rem;
+}
+
+.partnership-card p {
+   font-size: 1rem;
+   color: #ccc;
+}
+
+.partnership-btn {
+   background: #1048FF;
+   color: white;
+   border: none;
+   padding: 0.8rem 1.5rem;
+   font-size: 1rem;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+   margin-top: 2rem;
+}
+
+.partnership-btn:hover {
+   background: darkblue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .partnership-container {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .partnership-subtitle {
+      width: 100%;
+   }
+}

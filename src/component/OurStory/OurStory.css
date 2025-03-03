@@ -1,0 +1,41 @@
+.our-story {
+   background: linear-gradient(to bottom, #111, #000);
+   color: white;
+   text-align: center;
+   padding: 5rem 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.story-container {
+   max-width: 800px;
+}
+
+.story-title {
+   font-size: 2rem;
+   font-weight: bold;
+   margin-bottom: 1.5rem;
+   color: white;
+}
+
+.story-text {
+   font-size: 1.1rem;
+   color: #F4F4F4;
+   line-height: 1.8;
+   margin-bottom: 1.2rem;
+   width: 600px;
+   text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+   .story-title {
+      font-size: 1.8rem;
+   }
+
+   .story-text {
+      font-size: 1rem;
+      width: 100%;
+   }
+}

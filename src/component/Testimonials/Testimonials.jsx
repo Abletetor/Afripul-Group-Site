@@ -1,0 +1,56 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "./Testimonials.css";
+import { FaStar } from "react-icons/fa";
+import testimonials from "./data";
+import { MdVerified } from "react-icons/md";
+
+const Testimonials = () => {
+   return (
+      <section className="testimonial-section">
+         <div className="testimonial-header">
+            <h2>Custom Software <br /> That Powers Your Business</h2>
+            <p>
+               From web apps to complex enterprise platforms, our smart developer team is here to turn your idea into a functional system that works on high-performance software.
+            </p>
+         </div>
+
+         <Swiper
+            modules={ [Pagination, Autoplay] }
+            spaceBetween={ 20 }
+            slidesPerView={ 1 }
+            pagination={ { clickable: true } }
+            autoplay={ { delay: 3000, disableOnInteraction: false } }
+            breakpoints={ {
+               768: { slidesPerView: 2 },
+               1024: { slidesPerView: 3 },
+            } }
+            className="testimonial-slider"
+         >
+            { testimonials.map((testimonial) => (
+               <SwiperSlide key={ testimonial.id } className="testimonial-card">
+                  <div className="testimonial-content">
+                     <div className="stars">
+                        { [...Array(5)].map((_, i) => (
+                           <FaStar key={ i } />
+                        )) }
+                     </div>
+                     <p className="review-text">{ testimonial.review }</p>
+                     <div className="testimonial-footer">
+                        <img src={ testimonial.profilePic } alt={ testimonial.name } />
+                        <div>
+                           <h4>{ testimonial.name } <span><MdVerified className="verified-icon" /> Verified Customer</span></h4>
+                           <p>{ testimonial.date }</p>
+                        </div>
+                     </div>
+                  </div>
+               </SwiperSlide>
+            )) }
+         </Swiper>
+      </section>
+   );
+};
+
+export default Testimonials;

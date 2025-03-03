@@ -1,0 +1,194 @@
+.projects {
+   background: #0a0a0a;
+   color: white;
+   padding: 5rem 9%;
+   text-align: center;
+}
+
+/* Header */
+.header h2 {
+   font-size: 2rem;
+   font-weight: bold;
+   background: linear-gradient(#FFFFFF, #999999);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.header p {
+   margin-top: 10px;
+   color: #bbb;
+   max-width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* Tags */
+.tags {
+   margin-top: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+}
+
+.tags span {
+   background: #111;
+   padding: 8px 12px;
+   border-radius: 8px;
+   border: 1px solid #ccc;
+   font-size: 14px;
+   cursor: pointer;
+   transition: 0.3s ease;
+}
+
+.tags span:hover {
+   background: rgba(255, 255, 255, 0.3);
+}
+
+/* Project List */
+.project-list {
+   margin-top: 4rem;
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+
+/* Project Card */
+.project-card {
+   display: flex;
+   align-items: center;
+   border-top: 1px solid #111;
+   border-bottom: 1px solid #111;
+   padding: 30px;
+   border-radius: 10px;
+   position: relative;
+}
+
+.project-info {
+   flex: 1;
+   text-align: left;
+}
+
+.project-info h4 {
+   font-size: 14px;
+   color: gray;
+}
+
+.project-info h3 {
+   font-size: 1.8rem;
+   font-weight: bold;
+   margin-top: 10px;
+   width: 300px;
+}
+
+.project-tags {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   margin-top: 10px;
+   width: 400px;
+}
+
+.project-tags span {
+   background: #111;
+   padding: 5px 10px;
+   border-radius: 8px;
+   font-size: 14px;
+   border: 1px solid #ccc;
+}
+
+.project-info p {
+   margin-top: 15px;
+   color: #bbb;
+   line-height: 1.6;
+   width: 400px;
+}
+
+/* Button */
+.case-study-div {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   margin-top: 2rem;
+   gap: 5px;
+}
+
+.case-study-div a {
+   text-decoration: none;
+}
+
+.case-study-btn,
+.case-study-icon {
+   background: none;
+   border: 1px solid white;
+   border-radius: 5px;
+   color: white;
+   padding: 10px 20px;
+   cursor: pointer;
+   transition: 0.3s ease;
+}
+
+.case-study-icon {
+   padding: 10px 18px;
+}
+
+.case-study-icon svg {
+   transform: rotate(-45deg);
+}
+
+.case-study-btn:hover,
+.case-study-icon:hover {
+   background: white;
+   color: black;
+}
+
+/* Project Image */
+.project-image {
+   flex: 1;
+   text-align: right;
+}
+
+.project-image img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+   .project-card {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .project-info {
+      text-align: center;
+   }
+
+   .project-image {
+      margin-top: 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   .projects {
+      padding: 4rem 5%;
+   }
+
+   .project-info h3,
+   .project-info p,
+   .project-tags {
+      width: 100%;
+   }
+
+   .project-info p,
+   .project-info h3,
+   .project-info h4 {
+      text-align: left;
+   }
+
+   .project-info h3 {
+      font-size: 1.2rem;
+   }
+}

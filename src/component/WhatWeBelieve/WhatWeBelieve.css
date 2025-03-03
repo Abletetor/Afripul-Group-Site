@@ -1,0 +1,116 @@
+.belief-section {
+   background-color: #111;
+   color: white;
+   text-align: center;
+   padding: 4rem 2rem;
+}
+
+.belief-title {
+   font-size: 2rem;
+   font-weight: bold;
+   margin-bottom: 0.5rem;
+}
+
+.belief-subtitle {
+   font-size: 1.1rem;
+   color: #bbb;
+   margin-bottom: 2rem;
+}
+
+.belief-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1.5rem;
+   max-width: 1100px;
+   margin: auto;
+}
+
+.belief-card {
+   background-color: #000;
+   border-radius: 12px;
+   padding: 1.5rem;
+   text-align: left;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.belief-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.header-icon {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 1.5rem;
+}
+
+.card-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.profile {
+   display: flex;
+   align-items: center;
+   padding: 5px;
+   border: 1px solid #333;
+   border-radius: 20px;
+}
+
+.profile-pic {
+   width: 30px;
+   height: 30px;
+   object-fit: cover;
+   border-radius: 50%;
+   margin-right: 0.8rem;
+}
+
+.profile-info {
+   display: flex;
+   gap: 10px;
+   flex-wrap: wrap;
+}
+
+.name {
+   font-weight: bold;
+   font-size: 1rem;
+}
+
+.email {
+   font-size: 0.9rem;
+   color: #B8B8B8;
+}
+
+.date {
+   font-size: 0.9rem;
+   color: #aaa;
+}
+
+.card-title {
+   font-size: 1.4rem;
+   font-weight: bold;
+   margin-bottom: 0.8rem;
+}
+
+.card-content {
+   font-size: 1rem;
+   color: #B8B8B8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+   .belief-container {
+      grid-template-columns: 1fr;
+   }
+
+   .belief-title {
+      font-size: 1.8rem;
+   }
+
+   .belief-subtitle {
+      font-size: 1rem;
+   }
+}

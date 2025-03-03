@@ -1,0 +1,105 @@
+.choose {
+   background: #0a0a0a;
+   color: white;
+   text-align: center;
+   padding: 5rem 9%;
+   padding-bottom: .7rem;
+   display: flex;
+   justify-content: center;
+}
+
+.choose-container {
+   max-width: 1000px;
+   width: 100%;
+}
+
+.choose-container h2 {
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+
+.choose-container p {
+   width: 500px;
+   font-size: 1.2rem;
+   color: #bbb;
+   margin: 1rem auto;
+}
+
+.choose-container .choose-buttons {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   margin: 2rem 0;
+}
+
+.choose-buttons .primary-btn {
+   background: #1048FF;
+   color: #ffffff;
+   border: none;
+   padding: 10px 20px;
+   font-size: 1rem;
+   font-weight: bold;
+   border-radius: 25px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+}
+
+.choose-buttons .primary-btn:hover {
+   background: #ffffff;
+   color: #1048FF;
+}
+
+.choose-buttons .contact-us {
+   background: #1B1B1B;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   font-size: 1rem;
+   font-weight: bold;
+   border-radius: 25px;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+}
+
+.choose-buttons .contact-us .play {
+   font-size: 2rem;
+}
+
+.choose-buttons .contact-us:hover {
+   background: #1048FF;
+   color: #ffffff;
+}
+
+.choose-container .preview {
+   display: flex;
+   justify-content: center;
+   /* margin-top: 1rem; */
+}
+
+.choose-container .preview img {
+   max-width: 90%;
+   border-radius: 15px;
+   width: 100%;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+
+   .choose-container p {
+      width: 100%;
+   }
+
+   .choose-container h2 {
+      font-size: 2rem;
+   }
+
+   .choose-buttons .primary-btn,
+   .choose-buttons .contact-us {
+      font-size: .8rem;
+      padding: 10px 20px;
+   }
+}
